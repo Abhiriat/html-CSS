@@ -47,7 +47,7 @@
         {title:"Portfolio website",date:"16.01.2024"},
         {title:"Chat App",date:"28.08.2024"},
         
-    ]
+]
 const projectlist=document.getElementById("projectList");
 projects.map((project)=>{
     let li =document.createElement("li");
