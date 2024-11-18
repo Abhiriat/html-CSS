@@ -1,4 +1,4 @@
-var options = {
+const options = {
   series: [{
     name: "Earnings in $",
     data: [2000, 2100, 2000, 2200, 2800, 2300, 2500, 2400, 2300, 1800, 2700, 3000]
@@ -31,10 +31,10 @@ var options = {
   }
 };
 
-var chart = new ApexCharts(document.querySelector("#chart"), options);
+const chart = new ApexCharts(document.querySelector("#chart"), options);
 chart.render();
 
-var optionsDonutChart = {
+const optionsDonutChart = {
   series: [44, 30, 15, 8], 
   chart: {
     height: 350,
@@ -62,5 +62,5 @@ var optionsDonutChart = {
   }]
 };
 
-var chart2 = new ApexCharts(document.querySelector("#chart2"), optionsDonutChart);
+const chart2 = new ApexCharts(document.querySelector("#chart2"), optionsDonutChart);
 chart2.render();
