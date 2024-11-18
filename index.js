@@ -42,8 +42,7 @@
             ExperienceCell.innerText = Experience;
         }else{
             alert("Skill or Experience cannot find");
-        }
-    }
+        }}
     const projects=[
         {title:"Portfolio website",date:"16.01.2024"},
         {title:"Chat App",date:"28.08.2024"},
