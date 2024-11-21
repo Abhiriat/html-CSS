@@ -68,3 +68,31 @@ document.getElementById("contactForm").addEventListener("submit", (event) => {
         alert("Form submitted successfully!");
     }
 });
+
+const displayData = (data) => {
+    const quoteContainer = document.getElementById("quoteContainer");
+    const quote = data[0].q; 
+    const author = data[0].a; 
+
+   
+    quoteContainer.innerHTML = `
+        <p><strong>Quote:</strong> "${quote}"</p>
+        <p><strong>Author:</strong> ${author}</p>
+    `;
+};
+const fetchAPIData = async () => {
+    try {
+        const response = await fetch("https://cors-anywhere.herokuapp.com/https://zenquotes.io/api/today");
+        
+        const data = await response.json(); 
+        displayData(data);
+        console.log("Data:", data);
+    } catch (error) {
+        console.error("Error fetching data:", error);
+    }
+};
+fetchAPIData();
+  
+  
+  
+  
